@@ -33,11 +33,9 @@ public class Main {
 
     public static void doForAll(Guest[] guests, Baby[] babies) {
         for (int i = 0; i < guests.length; i++) {
-            System.out.println("Comment: " + guests[i] + " " + guests[i].getIsHere() + " " + guests[i].getIsInvited());
             guests[i].getToDance();
             guests[i].sayThankSomeone(babies[i % babies.length]);
             guests[i].getInvitation();
-            System.out.println("Comment: " + guests[i].getIsHere() + " " + guests[i].getIsInvited());
             System.out.println();
         }
     }
