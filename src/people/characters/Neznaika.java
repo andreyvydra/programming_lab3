@@ -4,14 +4,14 @@ import people.Man;
 
 public class Neznaika extends Man {
     public Neznaika() {
-        super("Neznaika");
+        super("Незнайка");
     }
 
     public void sitAndSleep() {
-        System.out.println(this + " has already set and slept at dandelions before dance started");
+        System.out.println(this + " сидел, а конкретнее спал в одуванчиках до начала бала");
     }
 
     public void goToSquare() {
-        System.out.println(this + " has saw babies, got up and gone to square");
+        System.out.println(this + " увидел малышек, поднялся и пошёл на площадку");
     }
 }

@@ -4,13 +4,13 @@ import people.characters.*;
 
 public class Main {
     public static void main(String[] args) {
-        Baby baby1 = new Baby("First baby");
-        Baby baby2 = new Baby("Second baby");
-        Baby baby3 = new Baby("Third baby");
-        Shurupchik shurup = new Shurupchik();
-        Gvozdik gvozd = new Gvozdik();
-        Bublik bublik = new Bublik();
-        Citizen citizen = new Citizen();
+        Baby baby1 = new Baby("Первая малышка");
+        Baby baby2 = new Baby("Вторая малышка");
+        Baby baby3 = new Baby("Третья малышка");
+        Guest shurup = new Guest("Шурупчик");
+        Guest gvozd = new Guest("Гвоздик");
+        Guest bublik = new Guest("Бублик");
+        Guest citizen = new Guest("Житель Змееевки");
         Neznaika neznaika = new Neznaika();
 
         Guest[] guests = new Guest[4];

@@ -4,13 +4,13 @@ import people.Man;
 
 public class Baby extends Man implements Kid {
     public Baby() {
-        super("Babyyy");
+        super("Малышка");
     }
     public Baby(String name) {
         super(name);
     }
 
     public void goingOn() {
-        System.out.println(this + " going on a somewhere");
+        System.out.println(this + " начал собираться куда-то");
     }
 }

@@ -1,6 +1,6 @@
 package people;
 
-public abstract class Guest extends Man implements Visitor {
+public class Guest extends Man implements Visitor {
     private GuestStatuses isHere = GuestStatuses.IS_NOT_COME;
     private GuestStatuses isInvited = GuestStatuses.IS_NOT_INVITED;
     public Guest(String name) {
@@ -24,17 +24,17 @@ public abstract class Guest extends Man implements Visitor {
     }
 
     public void sayThankSomeone(Object someone) {
-        System.out.println(this + " said thank for fruits to " + someone);
+        System.out.println(this + " сказал спасибо за фрукты " + someone);
     }
 
     public void getInvitation() {
         this.setIsInvited(GuestStatuses.IS_INVITED);
-        System.out.println(this + " has got invitation to dance");
+        System.out.println(this + " получил приглашение на бал");
     }
 
     public void getToDance() {
         this.setIsHere(GuestStatuses.IS_COME);
-        System.out.println(this + " has got to dance");
+        System.out.println(this + " пришёл на бал");
     }
 
     @Override
