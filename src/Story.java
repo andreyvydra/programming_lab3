@@ -1,3 +1,4 @@
+import people.ConstructorGetter;
 import people.Guest;
 import people.GuestFactory;
 import people.Man;
@@ -17,7 +18,7 @@ public class Story {
 
         Baby[] babies = new Baby[5];
         for (int i = 0; i < babies.length; i++) {
-            babies[i] = BabyFactory.createBaby();
+            babies[i] = BabyFactory.createBaby(new ConstructorGetter() {});
         }
 
         Story.sceneGuests(babies);
@@ -38,7 +39,7 @@ public class Story {
         charactersGuests[1] = new Guest("Бублик");
         Guest[] zmeevkaCitizens = new Guest[5];
         for (int i = 0; i < zmeevkaCitizens.length; i++) {
-            zmeevkaCitizens[i] = GuestFactory.createZmeevkaCitizen();
+            zmeevkaCitizens[i] = GuestFactory.createZmeevkaCitizen(new ConstructorGetter() {});
         }
         Guest[] allGuests = Arrays.copyOf(charactersGuests, charactersGuests.length + zmeevkaCitizens.length);
         System.arraycopy(zmeevkaCitizens, 0, allGuests, charactersGuests.length, zmeevkaCitizens.length);

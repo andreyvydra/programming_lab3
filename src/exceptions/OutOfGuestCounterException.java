@@ -1,4 +1,4 @@
 package exceptions;
 
-public class OutOfGuestCounterException extends RuntimeException {
+public class OutOfGuestCounterException extends Exception {
 }

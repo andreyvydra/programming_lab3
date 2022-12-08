@@ -3,6 +3,7 @@ package people;
 public class Guest extends Man implements Visitor {
     private GuestStatuses isHere = GuestStatuses.IS_NOT_COME;
     private GuestStatuses isInvited = GuestStatuses.IS_NOT_INVITED;
+
     public Guest(String name) {
         super(name);
     }

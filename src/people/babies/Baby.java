@@ -6,6 +6,7 @@ public class Baby extends Man implements Kid {
     public Baby() {
         super("Малышка");
     }
+
     public Baby(String name) {
         super(name);
     }
