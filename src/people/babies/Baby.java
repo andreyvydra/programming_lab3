@@ -13,4 +13,8 @@ public class Baby extends Man implements Kid {
     public void goingOn() {
         System.out.println(this + " начал собираться куда-то");
     }
+
+    public void cry() {
+        System.out.println(this + " кричит!");
+    }
 }
